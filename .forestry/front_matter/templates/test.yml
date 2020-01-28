@@ -1,0 +1,32 @@
+---
+label: Test
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: artist
+  label: artist
+- type: field_group
+  name: contact
+  label: contact
+  fields:
+  - type: text
+    name: email
+    label: email
+  - type: text
+    name: twitter_handle
+    label: twitter_handle
+  - type: text
+    name: instagram_handle
+    label: instagram_handle
+- type: text
+  name: primary_color
+  label: primary_color
+- type: text
+  name: repository_url
+  label: repository_url
