@@ -13,6 +13,11 @@ fields:
 - type: text
   name: artist
   label: Artist Name
+- name: profile_image
+  type: file
+  config:
+    maxSize: 250
+  label: Profile Image
 - name: hero_title
   type: text
   config:
