@@ -10,7 +10,7 @@ module.exports = {
   metaData: {
     siteName: config.title,
     siteDescription: config.description,
-    infoData: infoData
+    siteConfig: config
   },
   plugins: [
     {
