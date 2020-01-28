@@ -12,7 +12,7 @@
         </g-link>
       </div>
       <nav class="nav right">
-        <g-link class="nav__link" to="/contact">Say Hi!</g-link>
+        <g-link class="nav__link" to="/contact">Say Hello!</g-link>
       </nav>
     </div>
   </header>
@@ -46,8 +46,10 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+ 
 }
 .home-link {
+  font-family: 'pixelig_cursief';
   text-decoration: none;
 }
 .logo {

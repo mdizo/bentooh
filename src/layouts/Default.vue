@@ -23,6 +23,8 @@ export default {
   box-sizing: border-box;
 }
 
+@import url(../assets/fonts/fonts.css);
+
 body {
   --color-base: rgb(255, 255, 255);
   --color-base-1: rgb(243, 243, 243);

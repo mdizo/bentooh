@@ -19,7 +19,7 @@ module.exports = {
         typeName: 'ProjectPost',
         baseDir: './src/assets/content/',
         path: 'projects/**/*.md',
-        resolveAbsolutePaths: true,
+        resolveAbsolutePaths: false,
         remark: {
           externalLinksTarget: '_blank',
           externalLinksRel: ['nofollow', 'noopener', 'noreferrer']
