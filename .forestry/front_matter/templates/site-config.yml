@@ -8,11 +8,11 @@ fields:
     required: false
   label: Site Name
 - type: text
-  name: artist
-  label: artist
-- type: text
   name: description
-  label: description
+  label: Site Description
+- type: text
+  name: artist
+  label: Artist Name
 - name: hero_title
   type: text
   config:
@@ -25,23 +25,23 @@ fields:
   label: Hero Subtitle
 - type: field_group
   name: contact
-  label: contact
+  label: Contact Info
   fields:
   - type: text
     name: email
-    label: email
+    label: Email
   - type: text
     name: twitter_handle
-    label: twitter_handle
+    label: Twitter Profile
   - type: text
     name: instagram_handle
-    label: instagram_handle
+    label: Instagram Profile
 - type: text
   name: primary_color
-  label: primary_color
+  label: Primary Color
 - type: text
   name: repository_url
-  label: repository_url
+  label: Github Repo
 - name: footer
   type: text
   config:
