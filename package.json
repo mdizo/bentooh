@@ -1,0 +1,25 @@
+{
+  "name": "bentooh",
+  "version": "0.1.0",
+  "description": "Portfolio of Bernice Delanto",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "lint": "vue-cli-service lint",
+    "forestry-preview": "gridsome develop -p 8080 --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
+    "gridsome": "^0.7.12"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-gridsome": "^1.4.0",
+    "vue-eslint-parser": "^7.0.0"
+  }
+}
