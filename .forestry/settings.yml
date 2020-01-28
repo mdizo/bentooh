@@ -21,9 +21,6 @@ sections:
 - type: document
   path: src/assets/content/data/config.json
   label: Site Config
-- type: document
-  path: src/assets/content/data/config.json
-  label: Test
 upload_dir: src/assets/content/images
 public_path: "/src/assets/content/images"
 front_matter_path: ''
