@@ -13,12 +13,15 @@ fields:
 - type: text
   name: artist
   label: Artist Name
-- name: profile_image
-  type: text
-  config:
-    required: false
-  label: Profile Image
-  description: Upload File to Media first then input file name with extension here.
+- name: homepage_text
+  type: field_group
+  config: {}
+  label: Homepage Text
+- name: show_title
+  type: boolean
+  label: Show Hero Title
+  default: true
+  description: Display Hero Text on Homepage
 - name: hero_title
   type: text
   config:
