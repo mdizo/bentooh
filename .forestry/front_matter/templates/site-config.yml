@@ -42,3 +42,8 @@ fields:
 - type: text
   name: repository_url
   label: repository_url
+- name: footer
+  type: text
+  config:
+    required: false
+  label: Footer
