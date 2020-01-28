@@ -13,6 +13,10 @@ fields:
 - type: text
   name: artist
   label: Artist Name
+- name: homepage_text
+  type: field_group
+  config: {}
+  label: Homepage Text
 - name: show_title
   type: boolean
   label: Show Hero Title
