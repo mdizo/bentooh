@@ -13,15 +13,16 @@ fields:
 - type: text
   name: artist
   label: Artist Name
+- name: show_title
+  type: boolean
+  label: Show Hero Title
+  default: true
+  description: Display Hero Text on Homepage
 - name: hero_title
   type: text
   config:
     required: false
   label: Hero Title
-- name: show_title
-  type: boolean
-  label: Show Hero Title
-  default: true
 - name: hero_subtitle
   type: text
   config:
