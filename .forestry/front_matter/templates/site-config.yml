@@ -13,11 +13,6 @@ fields:
 - type: text
   name: artist
   label: Artist Name
-- name: profile_image
-  type: file
-  config:
-    maxSize: 250
-  label: Profile Image
 - name: hero_title
   type: text
   config:
@@ -52,5 +47,11 @@ fields:
   config:
     required: false
   label: Footer
+- name: profile_image
+  type: text
+  config:
+    required: false
+  label: Profile Image
+  description: Upload File to Media first then input file name with extension here.
 pages:
 - src/assets/content/data/config.json
