@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      settings: require("@/assets/content/data/info.json")
+      settings: require("@/assets/content/data/config.json")
     }
   }
 }
