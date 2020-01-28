@@ -30,3 +30,9 @@ fields:
 - type: text
   name: repository_url
   label: repository_url
+- name: profile_image
+  type: file
+  config:
+    maxSize: 250
+  label: Profile Image
+  default: "/src/assets/content/images/bentooh.jpg"
