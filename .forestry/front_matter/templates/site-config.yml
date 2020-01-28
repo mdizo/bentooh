@@ -2,15 +2,27 @@
 label: Site Config
 hide_body: true
 fields:
-- type: text
-  name: title
-  label: title
-- type: text
-  name: description
-  label: description
+- name: site_name
+  type: text
+  config:
+    required: false
+  label: Site Name
 - type: text
   name: artist
   label: artist
+- type: text
+  name: description
+  label: description
+- name: hero_title
+  type: text
+  config:
+    required: false
+  label: Hero Title
+- name: hero_subtitle
+  type: text
+  config:
+    required: false
+  label: Hero Subtitle
 - type: field_group
   name: contact
   label: contact
