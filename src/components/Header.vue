@@ -8,7 +8,7 @@
     <div class="container">
       <div class="left">
         <g-link :to="{ name: 'home' }" class="home-link">
-          <img src="../../static/logo.svg" :alt="settings.title" class="logo" />
+          <h1>bentooh ART</h1>
         </g-link>
       </div>
       <nav class="nav right">
