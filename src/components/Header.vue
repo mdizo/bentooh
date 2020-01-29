@@ -13,9 +13,27 @@
           </g-link>
         </div>
         <nav class="nav right">
-          <g-link to="/twitter">
+          <a
+            v-if="settings.contact.twitter_handle"
+            :href="'https://twitter.com/' + settings.contact.twitter_handle"
+            target="_blank"
+          >
             <font-awesome :icon="['fab', 'twitter']" />
-          </g-link>
+          </a>
+          <a
+            v-if="settings.contact.instagram_handle"
+            :href="'https://instagram.com/' + settings.contact.instagram_handle"
+            target="_blank"
+          >
+            <font-awesome :icon="['fab', 'instagram']" />
+          </a>
+          <a
+            v-if="settings.contact.facebook_handle"
+            :href="'https://instagram.com/' + settings.contact.facebook_handle"
+            target="_blank"
+          >
+            <font-awesome :icon="['fab', 'facebook']" />
+          </a>
         </nav>
       </div>
     </div>
@@ -23,14 +41,6 @@
 </template>
 
 <script>
-const routes = [
-  {
-    path: '/twitter',
-    beforeEnter() {
-      location.href = 'http://twitter.com'
-    }
-  }
-]
 export default {
   data() {
     return {
@@ -77,8 +87,8 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav {
-  margin-left: 1rem;
+.nav > a {
+  padding-left: 1rem;
   transition: border 0.15s;
 }
 .nav > *:last-of-type {
