@@ -9,13 +9,31 @@
       <div class="container">
         <div class="left">
           <g-link :to="{ name: 'home' }" class="home-link">
-            <h1>bentooh ART</h1>
+            <h1 class="site-name">bentooh ART</h1>
           </g-link>
         </div>
         <nav class="nav right">
-          <g-link to="/twitter">
+          <a
+            v-if="settings.contact.twitter_handle"
+            :href="'https://twitter.com/' + settings.contact.twitter_handle"
+            target="_blank"
+          >
             <font-awesome :icon="['fab', 'twitter']" />
-          </g-link>
+          </a>
+          <a
+            v-if="settings.contact.instagram_handle"
+            :href="'https://instagram.com/' + settings.contact.instagram_handle"
+            target="_blank"
+          >
+            <font-awesome :icon="['fab', 'instagram']" />
+          </a>
+          <a
+            v-if="settings.contact.facebook_handle"
+            :href="'https://instagram.com/' + settings.contact.facebook_handle"
+            target="_blank"
+          >
+            <font-awesome :icon="['fab', 'facebook']" />
+          </a>
         </nav>
       </div>
     </div>
@@ -23,14 +41,6 @@
 </template>
 
 <script>
-const routes = [
-  {
-    path: '/twitter',
-    beforeEnter() {
-      location.href = 'http://twitter.com'
-    }
-  }
-]
 export default {
   data() {
     return {
@@ -71,17 +81,19 @@ export default {
   height: 1.5rem;
 }
 .site-name {
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1;
 }
-.nav {
-  margin-left: 1rem;
+.nav > a {
+  padding-left: 1rem;
   transition: border 0.15s;
 }
 .nav > *:last-of-type {
   margin: 0;
+}
+@media (min-width: 420px) {
+  .site-name {
+    font-size: 2rem;
+  }
 }
 </style>
