@@ -40,17 +40,6 @@ query ProjectPost ($path: String!) {
     project_bg_color
     project_fg_color
   }
-  all: allProjectPost {
-        edges {
-            node {
-                path
-                title
-            }
-            next {
-                path
-            }
-        }
-    }
 }
 </page-query>
 
@@ -80,8 +69,8 @@ export default {
   padding: 20vh 0 4rem 0;
 }
 .project-title {
-  font-size: 4rem;
-  margin: 0 0 4rem 0;
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
   padding: 0;
 }
 .project-info {
@@ -148,5 +137,12 @@ ol {
   margin-left: 1.25rem;
   margin-bottom: 1.25rem;
   padding-left: 1.45rem;
+}
+
+@media (min-width: 920px) {
+  .project-title {
+    font-size: 4rem;
+    margin: 0 0 4rem 0;
+  }
 }
 </style>

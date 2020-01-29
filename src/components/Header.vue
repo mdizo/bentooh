@@ -9,7 +9,7 @@
       <div class="container">
         <div class="left">
           <g-link :to="{ name: 'home' }" class="home-link">
-            <h1>bentooh ART</h1>
+            <h1 class="site-name">bentooh ART</h1>
           </g-link>
         </div>
         <nav class="nav right">
@@ -81,11 +81,8 @@ export default {
   height: 1.5rem;
 }
 .site-name {
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1;
 }
 .nav > a {
   padding-left: 1rem;
@@ -93,5 +90,10 @@ export default {
 }
 .nav > *:last-of-type {
   margin: 0;
+}
+@media (min-width: 420px) {
+  .site-name {
+    font-size: 2rem;
+  }
 }
 </style>
