@@ -5,20 +5,32 @@
       sticky: $route.path === '/' || $route.path.includes('/projects/')
     }"
   >
-    <div class="container">
-      <div class="left">
-        <g-link :to="{ name: 'home' }" class="home-link">
-          <h1>bentooh ART</h1>
-        </g-link>
+    <div class="head-container">
+      <div class="container">
+        <div class="left">
+          <g-link :to="{ name: 'home' }" class="home-link">
+            <h1>bentooh ART</h1>
+          </g-link>
+        </div>
+        <nav class="nav right">
+          <g-link to="/twitter">
+            <font-awesome :icon="['fab', 'twitter']" />
+          </g-link>
+        </nav>
       </div>
-      <nav class="nav right">
-        <g-link class="nav__link" to="/contact">Say Hello!</g-link>
-      </nav>
     </div>
   </header>
 </template>
 
 <script>
+const routes = [
+  {
+    path: '/twitter',
+    beforeEnter() {
+      location.href = 'http://twitter.com'
+    }
+  }
+]
 export default {
   data() {
     return {
@@ -41,12 +53,15 @@ export default {
   left: 0;
   width: 100%;
 }
-.header > .container {
+.header > .head-container {
+  width: 100%;
+  background-color: white;
+}
+.header > .head-container > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  background-color: white;
 }
 .home-link {
   font-family: 'pixelig_cursief';
@@ -62,24 +77,11 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav > * {
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 4px;
-  margin-right: 3rem;
-  padding-bottom: 4px;
-  border-bottom: 1px solid;
-  border-color: transparent;
+.nav {
+  margin-left: 1rem;
   transition: border 0.15s;
 }
 .nav > *:last-of-type {
   margin: 0;
-}
-.nav > *:hover {
-  border-color: inherit;
-}
-.nav > .active {
-  border-color: inherit;
 }
 </style>

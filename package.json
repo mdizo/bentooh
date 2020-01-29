@@ -18,7 +18,11 @@
     "gridsome": "^0.7.12"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-gridsome": "^1.4.0",
     "vue-eslint-parser": "^7.0.0"
   }

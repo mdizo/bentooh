@@ -7,7 +7,6 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
@@ -23,16 +22,18 @@ export default {
   width: 480px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 4rem 0 8rem 0;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 6rem;
 }
 
 .hero-image {
   margin-bottom: 0rem;
 }
 .hero-title {
-  font-family: "pixelig_cursief";
-  font-size: 3rem;
+  font-family: 'pixelig_cursief';
+  font-size: 2rem;
   font-weight: 700;
   padding: 0;
   margin-bottom: 1rem;
@@ -49,5 +50,11 @@ export default {
   padding: 0;
   margin: 0;
   opacity: 0.6;
+}
+
+@media (min-width: 920px) {
+  .hero-title {
+    font-size: 3rem;
+  }
 }
 </style>
