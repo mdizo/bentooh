@@ -13,7 +13,9 @@
           </g-link>
         </div>
         <nav class="nav right">
-          <g-link class="nav__link" to="/contact">Say Hello!</g-link>
+          <g-link to="/twitter">
+            <font-awesome :icon="['fab', 'twitter']" />
+          </g-link>
         </nav>
       </div>
     </div>
@@ -21,6 +23,14 @@
 </template>
 
 <script>
+const routes = [
+  {
+    path: '/twitter',
+    beforeEnter() {
+      location.href = 'http://twitter.com'
+    }
+  }
+]
 export default {
   data() {
     return {
@@ -67,24 +77,11 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav > * {
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 4px;
-  margin-right: 3rem;
-  padding-bottom: 4px;
-  border-bottom: 1px solid;
-  border-color: transparent;
+.nav {
+  margin-left: 1rem;
   transition: border 0.15s;
 }
 .nav > *:last-of-type {
   margin: 0;
-}
-.nav > *:hover {
-  border-color: inherit;
-}
-.nav > .active {
-  border-color: inherit;
 }
 </style>
