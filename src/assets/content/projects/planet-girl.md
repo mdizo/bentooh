@@ -9,4 +9,4 @@ project_bg_color: "#EDEDED"
 project_fg_color: "#36B5EF"
 
 ---
-![Project Text](../images/cplanet-girl.jpg)
+![Project Text](../images/planet-girl.jpg)
