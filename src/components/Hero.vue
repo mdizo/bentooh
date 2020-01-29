@@ -25,7 +25,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  padding-bottom: 6rem;
 }
 
 .hero-image {
@@ -50,5 +50,11 @@ export default {
   padding: 0;
   margin: 0;
   opacity: 0.6;
+}
+
+@media (min-width: 920px) {
+  .hero-title {
+    font-size: 3rem;
+  }
 }
 </style>

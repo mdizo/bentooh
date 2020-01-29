@@ -5,15 +5,17 @@
       sticky: $route.path === '/' || $route.path.includes('/projects/')
     }"
   >
-    <div class="container">
-      <div class="left">
-        <g-link :to="{ name: 'home' }" class="home-link">
-          <h1>bentooh ART</h1>
-        </g-link>
+    <div class="head-container">
+      <div class="container">
+        <div class="left">
+          <g-link :to="{ name: 'home' }" class="home-link">
+            <h1>bentooh ART</h1>
+          </g-link>
+        </div>
+        <nav class="nav right">
+          <g-link class="nav__link" to="/contact">Say Hello!</g-link>
+        </nav>
       </div>
-      <nav class="nav right">
-        <g-link class="nav__link" to="/contact">Say Hello!</g-link>
-      </nav>
     </div>
   </header>
 </template>
@@ -41,12 +43,15 @@ export default {
   left: 0;
   width: 100%;
 }
-.header > .container {
+.header > .head-container {
+  width: 100%;
+  background-color: white;
+}
+.header > .head-container > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  background-color: white;
 }
 .home-link {
   font-family: 'pixelig_cursief';
