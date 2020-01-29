@@ -46,7 +46,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 100%;
- 
+  background-color: white;
 }
 .home-link {
   font-family: 'pixelig_cursief';
